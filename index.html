@@ -71,10 +71,10 @@
             </div> <!-- .main-navigation -->
             <div class="social-icons">
                 <ul>
-                    <li><a href="https://twitter.com/sivandish"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/sivakumar-sekar-4a066716/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="mailto:sekar.siva87@gmail.com"><i class="fa fa-envelope-square"></i></a></li>
-                    <li><a href="https://github.com/sivakumars"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/sivandish" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/sivakumar-sekar-4a066716/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="mailto:sekar.siva87@gmail.com" target="_blank"><i class="fa fa-envelope-square"></i></a></li>
+                    <li><a href="https://github.com/sivakumars" target="_blank"><i class="fa fa-github"></i></a></li>
                 </ul>
             </div> <!-- .social-icons -->
         </div> <!-- .sidebar-menu -->
@@ -100,10 +100,13 @@
                         <div class="col-md-12">
                             <h4 class="widget-title">Learn About Me</h4>
                             <div class="about-image">
-                                <img src="img/8.jpg" alt="about me">
+                                <!-- <img src="img/8.jpg" alt="about me"> -->
+                                <p id="birdman-me">
+                                	SIVA KUMAR
+                                </p>
                             </div>
                             <p>
-                            	I have Over 3+years of experience in professional Software development and  Web Technologies in front end  like HTML, CSS, JavaScript, JQuery , Custom JQuery libraries like and J2EE, Java and relational databases.I am looking for front end job opportunities.<a href="https://sivakumars.github.io/Aboutme/" target="_blank">Click here&nbsp;</a>to know more <a href="https://sivakumars.github.io/Aboutme/" target="_blank">about me</a>
+                            	I have Over 3+years of experience in professional Software development and  Web Technologies in front end  like HTML, CSS, JavaScript, JQuery , Custom JQuery libraries like SlickGrid and competent in modern frameworks like Angular.<a href="https://github.com/sivakumars" target="_blank">Click here&nbsp;</a>to know more <a href="https://sivakumars.github.io/Aboutme/" target="_blank">about me</a>
                             </p>
                             <hr>
                         </div>
@@ -167,11 +170,11 @@
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
-                                <img src="img/5.jpg" alt="">
+                                <img src="img/Imagesearch.png" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">Pellentesque porta ligula</a></h5>
-                                        <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
+                                        <h5><a href="https://sivakumars.github.io/imagegallery/">Image Gallery</a></h5>
+                                        <p><a href="https://sivakumars.github.io/imagegallery/">An image gallery app that interacts with a REST API from an image service with pagination facilities.</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -181,8 +184,8 @@
                                 <img src="img/6.jpg" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">Pellentesque porta ligula</a></h5>
-                                        <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
+                                        <h5><a href="https://github.com/sivakumars/simpletest/blob/master/simpletest.js">Simpletes.js</a></h5>
+                                        <p><a href="https://github.com/sivakumars/simpletest/blob/master/simpletest.js">A simple Javascript assertion framework to be used in browser without any hassle</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -197,7 +200,7 @@
                         <div class="col-md-12">
                             <h4 class="widget-title">PLACE TO TALK WITH ME</h4>
                             <p>
-                               You can leave a message here or <a href="mailto:sekar.siva87@gmail.com" target="_blank"><i class="fa fa-envelope">&nbsp;mail me&nbsp;</i></a>. I can also be reached at 9944877634.
+                               I am looking for new Frontend Dev opportunities. You can leave a message here or <a href="mailto:sekar.siva87@gmail.com" target="_blank"><i class="fa fa-envelope">&nbsp;mail me&nbsp;</i></a>. I can also be reached at 9944877634.
                             </p>
                         </div>
                     </div>
@@ -236,11 +239,20 @@
 
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/min/plugins.min.js"></script>
-        <script src="js/min/main.min.js"></script>
+        <script src="js/min/main.min.js"></script>		
+		<script src="https://cdn.rawgit.com/chrisma/birdman.js/gh-pages/birdman.js"></script>
 		<script type="text/javascript">
 			$(function(){
 				$('.contact-form')[0].reset();
+				$('#birdman-me').birdman({
+				    speedUp:false,
+				    method: 'letters',
+				    delay: 1000
+				});
 			});
+			
 		</script>
+
+
     </body>
 </html>
